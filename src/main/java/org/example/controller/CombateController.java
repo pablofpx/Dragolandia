@@ -9,9 +9,7 @@ import org.example.view.Consola;
 
 public class CombateController {
     private MagoRepository magoRepo = new MagoRepository();
-    private MonstruoRepository monstruoRepo = new MonstruoRepository();
     private BosqueRepository bosqueRepo = new BosqueRepository();
-    private DragonRepository dragonRepo = new DragonRepository();
     private Consola view = new Consola();
     private MotorCombate motor = new MotorCombate();
 
