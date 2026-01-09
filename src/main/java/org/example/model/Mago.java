@@ -72,6 +72,7 @@ public class Mago {
         return hechizos.get(r.nextInt(hechizos.size()));
     }
 
+    // desfasado, se hace con otro metodo
     public void lanzarHechizo(Monstruo monstruo) {
         monstruo.setVida(monstruo.getVida()-this.getNivelMagia());
     }

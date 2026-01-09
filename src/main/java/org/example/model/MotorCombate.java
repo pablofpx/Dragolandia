@@ -25,7 +25,7 @@ public class MotorCombate {
             dragon.exhalar(jefe);
             System.out.println(dragon.getNombre()+ " hace arder al monstruo jefe "+jefe.getNombre());
 
-            jefe.atacarDragon(dragon);
+            jefe.atacarDragon(dragon); // no le hace daño
             System.out.println("El jefe intenta dañar al dragón "+dragon.getNombre() +"... pero no lo consigue.");
 
             if (jefe.getVida() <= 0 && !bosque.getMonstruos().isEmpty()) {

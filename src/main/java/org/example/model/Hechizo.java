@@ -20,7 +20,7 @@ public enum Hechizo {
             }
         }
     },
-    RAYO(10) {
+    RAYO(5) {
         @Override
         public void efecto(Mago mago, Monstruo objetivo, Bosque bosque) {
             int dano = mago.getNivelMagia() * poder;
