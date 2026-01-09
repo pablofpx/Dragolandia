@@ -46,6 +46,8 @@ public class CombateController {
 
         TipoMonstruo tipo = parseMonstruo(tipoMonstruo);
         Monstruo monstruo = new Monstruo(nombreMonstruo, vidaMonstruo, tipo, danoMonstruo);
+        Monstruo monstruo2 = new Monstruo("Carlinhos brown", vidaMonstruo, tipo, danoMonstruo);
+        Monstruo monstruo3 = new Monstruo("Malenia", vidaMonstruo, tipo, danoMonstruo);
         // no puedo persistir el monstruo porque lo hago en bosque
         // monstruoRepo.save(monstruo);
 
@@ -58,12 +60,15 @@ public class CombateController {
         Dragon dragon = new Dragon("Julian", 6, 1000);
         //hardcodeado
         bosque.addMonstruos(monstruo);
+        bosque.addMonstruos(monstruo2);
+        bosque.addMonstruos(monstruo3);
         bosque.asignarDragon(dragon);
         bosqueRepo.save(bosque);
 
-        motor.combatir(mago, monstruo, bosque, dragon);
+        // cambio monstruo por bosque.getMonstruos
+        motor.combatir(mago, bosque, dragon);
 
-        String ganador = motor.getGanador(mago, monstruo);
+        String ganador = motor.getGanador(mago, bosque);
         view.mostrarResultado(ganador);
     }
 }

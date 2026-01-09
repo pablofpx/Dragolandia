@@ -15,7 +15,7 @@ public class Mago {
     private String nombre;
     private int vida; // no negativo
     private int nivelMagia; // no negativo
-    @ElementCollection(targetClass = Hechizo.class)
+    @ElementCollection
     @Enumerated(EnumType.STRING)
     private List<Hechizo> hechizos = new ArrayList<>(); // lista de hechizos
 

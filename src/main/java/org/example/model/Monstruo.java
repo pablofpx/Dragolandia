@@ -80,14 +80,18 @@ public class Monstruo {
         mago.setVida(mago.getVida()-this.fuerza);
     }
 
+    // el dragón es inmortal
+    public void atacarDragon(Dragon dragon) {
+        dragon.getHp();
+    }
+
     @Override
     public String toString() {
-        return "Monstruo{" +
+        return "Monstruo " +
                 "id=" + id +
                 ", nombre='" + nombre + '\'' +
                 ", vida=" + vida +
                 ", tipo=" + tipo +
-                ", fuerza=" + fuerza +
-                '}';
+                ", fuerza=" + fuerza;
     }
 }
