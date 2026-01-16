@@ -30,3 +30,8 @@ de las probabilidades y de los valores de daño y de vida. Por lo tanto podría 
 Al ejecutar el programa se recoge por consola un sólo mago, un sólo monstruo y un entorno bosque para facilitar las pruebas del juego.
 Los demás monstruos y el dragón se crean de manera predeterminada, pero se podrían crear por consola también. Una vez
 creado el entorno empieza la batalla hasta que uno de los bandos salga ganador.
+
+## [Manual de usuario](Manual_usuario.md)
+
+## Tablas
+**[PDF de las tablas](tablasDrago.pdf)**
